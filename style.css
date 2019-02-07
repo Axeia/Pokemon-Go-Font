@@ -1,0 +1,124 @@
+/* Font Styling CSS */
+@font-face{
+    font-family: 'pokemongo';
+    src: url('pokemongo.woff');
+}
+
+[class^="type-"], [class^="weather-"], [class^="item-"]{
+    font-family: 'pokemongo';
+}
+
+[class^="type-"]::after{
+    font-size: 2rem;
+}
+.type-bug::after       { content: '\e012'; color: #80c601; }
+.type-dark::after      { content: '\e013'; color: #525061; }
+.type-dragon::after    { content: '\e014'; color: #1d67ba; }
+.type-electric::after  { content: '\e015'; color: #fed03d; }
+.type-fairy::after     { content: '\e016'; color: #f592da; }
+.type-fighting::after  { content: '\e017'; color: #d54c63; }
+.type-fire::after      { content: '\e018'; color: #ff9d2b; }
+.type-flying::after    { content: '\e019'; color: #6e89d6; }
+.type-ghost::after     { content: '\e01a'; color: #8175c9; }
+.type-grass::after     { content: '\e01b'; color: #38ae52; }
+.type-ground::after    { content: '\e01c'; color: #ce6b2f; }
+.type-ice::after       { content: '\e01d'; color: #68d2c7; }
+.type-normal::after    { content: '\e01e'; color: #7e8383; }
+.type-poison::after    { content: '\e01f'; color: #e157ca; }
+.type-psychic::after   { content: '\e020'; color: #e42850; }
+.type-rock::after      { content: '\e021'; color: #cbb866; }
+.type-steel::after     { content: '\e022'; color: #2b7c8f; }
+.type-water::after     { content: '\e023'; color: #5ab0db; }
+
+
+[class^="weather-"]::after{
+    font-size: 2.5rem;
+}
+
+.weather-clear::after                  { content: '\e028'; }
+.weather-cloudy::after                 { content: '\e029'; }
+.weather-fog::after                    { content: '\e02a'; }
+.weather-partially-cloudy-day::after   { content: '\e02b'; }
+.weather-partially-cloudy-night::after { content: '\e02c'; }
+.weather-rain::after                   { content: '\e02d'; }
+.weather-snow::after                   { content: '\e02e'; }
+.weather-sunny::after                  { content: '\e02f'; }
+.weather-windy::after                  { content: '\e030'; }
+
+[class^="item-"]::after, [class^="item-"]::before{
+    font-size: 4.0rem;
+    position: absolute; 
+    margin-top: -0.7rem;    
+    font-size: 2.2rem;
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+}
+
+[class^="item-"]{
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.item-dragonscale::after  { 
+    position: inherit;
+    content: '\e03b'; 
+    color: #1c78b1; 
+    background: 
+    /* Shade */        
+    linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(33,33,33,0) 45%,rgba(33,33,33,0) 100%),        
+    /* Ribbon colours */        
+    radial-gradient(at top right, #ecf0b3 0%,#ecf0b3 28%,#aeeccc 28.1%,#70dfe7 28.1%,#70dfe7 44%,#4cd0e9 44.1%,#4cd0e9 60%,#30a4cd 60.1%,#30a4cd 74%,#48b3dc 74.1%,#48b3dc 86%,#349cc8 86.1%,#349cc8 100%);
+    width: 2.3rem;
+    height: 2.5rem;
+    margin: 0;
+    background-size: auto,
+    2.5rem 2.5rem;
+    /* Firefox will pick up on this -webkit property as well. */
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Another webkit property Firefox will pick up on */
+    -webkit-text-stroke: 0.5px #cecece;
+}
+.item-kingsrock::before   { content: '\e03c'; color: #66310d; }
+.item-kingsrock::after    { content: '\e03d'; color: #bb9977;
+    background: linear-gradient(to right, #ceb594 0%,#d7a57c 44%,#8a6137 57%,#7d4c1a 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+.item-metalcoat::before   { content: '\e03e'; color: #305482; 
+    background: linear-gradient(to right, #d0e0f1 0%,#485678 51%,#d0e0f1 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.item-metalcoat::after    { content: '\e03f'; color: #bfdceb; }
+.item-sinnohstone::before { 
+    content: '';
+    background: radial-gradient(ellipse at center, #a77191 0%, #432438 100%);
+    border-radius: 0.35rem;
+    border-radius: calc(0.35rem + 1px);
+    width: 0.7rem;
+    height: 0.7rem;
+    display: block;
+    padding: 0;
+    left: 0.5rem;
+    top: 1.9rem;
+    border: 1px solid rgba(33,33,33,0.5);
+}
+.item-sinnohstone::after  { content: '\e041'; color: #a0b0c9;
+    background: linear-gradient(-25deg, #b2c3d5 0%,#93a4b5 33%,#fdfdfd 51%,#cbd3db 69%,#96a7c8 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #cecece;
+
+}
+.item-sunstone::after     { content: '\e03a'; color: #de4a20;
+    background: radial-gradient(ellipse at center, rgba(254,218,82,1) 0%,rgba(251,205,76,1) 7%,rgba(251,158,54,1) 20%,rgba(253,125,41,1) 30%,rgba(249,107,36,1) 38%,rgba(242,95,35,1) 43%,rgba(228,77,36,1) 54%,rgba(223,69,34,1) 59%,rgba(221,65,31,1) 65%,rgba(219,64,28,1) 74%,rgba(215,66,29,1) 78%,rgba(195,62,29,1) 91%,rgba(188,60,31,1) 100%);
+    /* Firefox will pick up on this -webkit property as well. */
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.item-upgrade::before     { content: '\e038'; color: #4a4a73; }
+.item-upgrade::after      { content: '\e039'; color: #fffc4d; -webkit-text-stroke: #8c5b10 0.5px; }

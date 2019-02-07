@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70mm"
+   height="70mm"
+   viewBox="0 0 70 70"
+   version="1.1"
+   id="svg872"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="item-metal-coat-handle.svg">
+  <defs
+     id="defs866" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.6203868"
+     inkscape:cx="60.590489"
+     inkscape:cy="142.86465"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata869">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-227)">
+    <g
+       id="g943"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       transform="matrix(1.4641107,0,0,1.4641107,-15.46007,-121.67647)">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 130.26758,56.429688 c -10.70618,0.175204 -22.41238,3.581438 -25.38477,8.136718 -0.80408,1.25983 -1.1049,9.82886 1.17188,11.914063 L 178.125,96.402344 v 38.281246 l 8.20312,3.32032 v 60.35156 l -12.69531,8.20312 v 8.78907 c 14.97957,-5.66117 30.22769,-11.17571 31.21485,-24.46094 V 76.675781 L 134.76562,56.558594 c -1.46029,-0.112914 -2.96859,-0.153936 -4.49804,-0.128906 z m -0.0469,1.787109 a 8.9636381,4.705123 0 0 1 8.96485,4.705078 8.9636381,4.705123 0 0 1 -8.96485,4.705078 8.9636381,4.705123 0 0 1 -8.96289,-4.705078 8.9636381,4.705123 0 0 1 8.96289,-4.705078 z"
+         transform="matrix(0.26458333,0,0,0.26458333,0,227)"
+         id="path940" />
+    </g>
+  </g>
+</svg>
