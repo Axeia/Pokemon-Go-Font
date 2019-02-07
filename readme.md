@@ -1,3 +1,7 @@
+# Want a preview?
+
+Head on over to [axeia.github.io/Pokemon-Go-Font/](https://axeia.github.io/Pokemon-Go-Font/) for a preview of all the icons currently implemented in the font.
+
 # Pokémon Go Font
 
 Whilst working on my site located at eggfriends.me I found myself needing various Pokémon Go related icons and decided to make my own icon font. It's based on the [Latos-Regular](https://fonts.google.com/specimen/Lato) font which is released under an [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web) and happens to be the font used within Pokémon Go so you may want to use it for the font itself in addition to icons I have added.
