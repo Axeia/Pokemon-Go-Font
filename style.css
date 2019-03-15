@@ -117,8 +117,113 @@
 .item-sunstone::after     { content: '\e03a'; color: #de4a20;
     background: radial-gradient(ellipse at center, rgba(254,218,82,1) 0%,rgba(251,205,76,1) 7%,rgba(251,158,54,1) 20%,rgba(253,125,41,1) 30%,rgba(249,107,36,1) 38%,rgba(242,95,35,1) 43%,rgba(228,77,36,1) 54%,rgba(223,69,34,1) 59%,rgba(221,65,31,1) 65%,rgba(219,64,28,1) 74%,rgba(215,66,29,1) 78%,rgba(195,62,29,1) 91%,rgba(188,60,31,1) 100%);
     /* Firefox will pick up on this -webkit property as well. */
+    background-clip: text;
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .item-upgrade::before     { content: '\e038'; color: #4a4a73; }
 .item-upgrade::after      { content: '\e039'; color: #fffc4d; -webkit-text-stroke: #8c5b10 0.5px; }
+
+
+/** The settings-like themed checkbox **/
+.pogo-checkbox input[type="checkbox"] {
+    opacity: 0;
+	width: 1rem;
+	height: 1rem;
+}
+
+.pogo-checkbox label {
+    position: relative;
+    display: inline-block;
+	line-height: 1.75rem;
+	padding-left: 1.5rem;
+	margin-left: -1rem;
+}
+
+.pogo-checkbox label::before{
+    position: absolute;
+    content: "\e050";    
+    display: inline-block;
+	color: #28cea9;
+	font-size: 1.5rem;
+    margin-left: -1.75rem;
+}
+.pogo-checkbox input[type="checkbox"]:checked+label::before{
+	content: "\e051";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.pogo-checkbox input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/** Made up switch **/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+	display: block;
+	position: absolute;
+}
+.switch:focus-within{
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #28cea9;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #28cea9;
+}
+  
+input:checked + .slider:before {
+	transform: translateX(18px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 23px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+} 
+
+.switch + label{
+	margin-left: 0.3rem;
+}
+.toggle-checkbox button{
+	padding: 0.1rem;
+}
+
+

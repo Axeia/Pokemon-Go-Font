@@ -5,8 +5,8 @@
   <meta charset="utf-8">
 
   <title>Pokémon Go Font</title>
-  <meta name="description" content="Pokémon Go Font">
-  <meta name="author" content="Axeia">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css">
   <style>
@@ -44,7 +44,7 @@ body {
   margin-top: 1rem;
 }
 
-#main .table-container{
+#main .table-container, form{
     float: left;
     margin-left: 2rem;
 }
@@ -53,7 +53,7 @@ table{
   margin-bottom: 1.25rem;
   table-layout: fixed;
 }
-table, th, td {
+table, th, td, form {
   border: 1px solid #2b7c8f;
 }
 ul{
@@ -67,13 +67,19 @@ ul li{
 }
 .types-table img{ width: 2rem; height: 2rem; vertical-align: text-bottom; }
 .items-table img{ width: 4rem; height: 4rem; vertical-align: text-top; }
-#main p:last-child{
+#main>p:last-child{
   content: '';
   clear: both;
   background: rgba(0,0,0,0.2);
   margin-top: 1rem;
   padding: 2rem;
   text-align: center;
+}
+
+form{
+	padding: 0.25rem;
+	clear: both;
+	margin-bottom: 1rem;
 }
 
   </style>
@@ -298,6 +304,23 @@ ul li{
       </tbody>
     </table>
   </div>
+  
+  <form method="POST" action="/">
+  <h1>Accessible form elements</h1>
+  <div class="pogo-checkbox">
+	<input type="checkbox" id="test" name="test" /><label for="test">Checkbox</label>
+	<input type="checkbox" id="test2" name="test2" /><label for="test2">Checkbox</label>
+  </div>
+  <br/>
+  <label class="switch">
+    <input id="togglez" name="togglez" type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  <label for="togglez">Toggle Switch</label>
+	
+	<p>Above are form elements styled after the game. The checkboxes are meant to resemble those in the games settings menu, the radio button is made up but using the colours of the game. I haven't had a need for a radio button yet.</p>
+  </form>
+  
   <p>Pokémon, Pokémon Go and Pokémon character names are trademarks of Nintendo.</p>
 </div>
 </body>
